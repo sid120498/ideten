@@ -1,0 +1,3 @@
+db:
+  connString: "mongodb://mongodb0.example.com:27017"
+  name: "string"
