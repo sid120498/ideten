@@ -1,0 +1,7 @@
+server:
+  port: 6969
+
+spring:
+  data:
+    mongodb:
+      uri: "mongodb://localhost:27017/ideten"
