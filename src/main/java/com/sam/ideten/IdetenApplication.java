@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class IdetenApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(IdetenApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(IdetenApplication.class, args);
+    }
 
 }

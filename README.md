@@ -1,2 +1,0 @@
-# Ideten
-**An Online Ide**
