@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CodeController {
     @Autowired
-    @Qualifier(value = "Mongo_Service")
+    @Qualifier(value = "Code_Service")
     private CodeService<Code> codeService;
     @RequestMapping(value = "/list", method= RequestMethod.POST)
     public Code list(@RequestBody String codeText){
