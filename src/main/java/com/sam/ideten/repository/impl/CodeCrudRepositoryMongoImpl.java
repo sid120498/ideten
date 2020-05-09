@@ -1,16 +1,16 @@
 package com.sam.ideten.repository.impl;
 
 import com.sam.ideten.domain.Code;
-import com.sam.ideten.repository.CodeRepository;
+import com.sam.ideten.repository.CrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 
 @Repository("Code_Mongo")
-public class CodeRepositoryMongoImpl implements CodeRepository<Code> {
+public class CodeCrudRepositoryMongoImpl implements CrudRepository<Code> {
     private final MongoTemplate mongoTemplate;
     @Autowired
-    public CodeRepositoryMongoImpl(MongoTemplate mongoTemplate){
+    public CodeCrudRepositoryMongoImpl(MongoTemplate mongoTemplate){
         this.mongoTemplate = mongoTemplate;
     }
 
@@ -20,17 +20,17 @@ public class CodeRepositoryMongoImpl implements CodeRepository<Code> {
     }
 
     @Override
-    public Code get(Long id) {
+    public Code get(String id) {
         return null;
     }
 
     @Override
-    public Code update(Long id, Code code) {
+    public Code update(String id, Code code) {
         return null;
     }
 
     @Override
-    public boolean delete(Long id) {
+    public boolean delete(String id) {
         return false;
     }
 }

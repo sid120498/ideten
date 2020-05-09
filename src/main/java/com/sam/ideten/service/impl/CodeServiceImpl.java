@@ -1,17 +1,19 @@
 package com.sam.ideten.service.impl;
 
 import com.sam.ideten.domain.Code;
-import com.sam.ideten.repository.CodeRepository;
+import com.sam.ideten.repository.CrudRepository;
 import com.sam.ideten.service.CodeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
-@Service("Mongo_Service")
-public class CodeServiceMongoImpl implements CodeService<Code> {
+@Service("Code_Service")
+public class CodeServiceImpl implements CodeService<Code> {
     @Autowired()
-    @Qualifier(value ="Code_Mongo")
-    private CodeRepository<Code> codeRepository;
+    @Qualifier(value = "Code_Mongo")
+    private CrudRepository<Code> codeRepository;
 
     @Override
     public Code create(Code code) {
