@@ -5,3 +5,9 @@ spring:
   data:
     mongodb:
       uri: "mongodb://localhost:27017/ideten"
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: ideten_kafka_code_consumer
+      auto-offset-reset: earliest
+n

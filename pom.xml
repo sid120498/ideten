@@ -21,7 +21,7 @@
     <description>An online ide</description>
     <modules>
         <module>application</module>
-        <module>library</module>
+        <module>execution_interface</module>
     </modules>
     <dependencies>
         <dependency>

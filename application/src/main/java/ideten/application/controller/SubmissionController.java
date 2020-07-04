@@ -2,7 +2,7 @@ package ideten.application.controller;
 
 import ideten.application.domain.Submission;
 import ideten.application.service.SubmissionService;
-import ideten.library.ServiceReply;
+import ideten.execution_inteface.ServiceReply;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -23,9 +23,9 @@ public class SubmissionController {
     }
 
     @RequestMapping(value = "submission/{id}",method = RequestMethod.GET)
-    public String getOne(@PathVariable("id") String id){
-        return serviceReply.test();
-//        return this.submissionService.get(id);
+    public Submission getOne(@PathVariable("id") String id){
+//        return serviceReply.test();
+        return this.submissionService.get(id);
     }
 
 
